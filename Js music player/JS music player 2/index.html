@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/056a4fb5f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="  https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/46/24/5d/46245db2-be44-2a12-f79a-b085df5bf72b/mza_5306540936741203000.png/375x375bb.jpg "
+          class="song-image"
+        />
+        <h1>Pirlanta</h1>
+        <p>Demet Akalin</p>
+
+        <audio id="song">
+          <source src="media/Demet Akalın - Pırlanta.mp3" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

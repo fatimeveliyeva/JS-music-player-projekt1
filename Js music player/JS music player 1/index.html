@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/056a4fb5f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/4c/2f/db/4c2fdb53-8e99-6584-0833-42d2dcaebd0d/cover.jpg/400x400cc.jpg  "
+          class="song-image"
+        />
+        <h1>Parol</h1>
+        <p>Aygün Kazimova</p>
+
+        <audio id="song">
+          <source
+            src="media/Aygun_Kazimova_-_Parol_-_www.BiG.AZ.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
